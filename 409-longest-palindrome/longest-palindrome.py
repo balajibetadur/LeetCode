@@ -1,3 +1,6 @@
+# 1. Approach
+# a. Get count of all characters in hash and all all counts using (count // 2) * 2, and add 1 at the end if res < len(s), we can also add val - 1 incase of odd nums as  2nd sub approach
+# Add element in list and when you encounter it again remove it, at the end if list is empty retrun len(s) else return len(s) - len(list) + 1
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         # approach 1
