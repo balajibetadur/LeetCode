@@ -9,9 +9,4 @@ class Solution:
                 stack.pop()
             stack.append(num)
 
-        res = []
-        for num in nums1:
-            if max_map.get(num): res.append(max_map[num])
-            else: res.append(-1)
-
-        return res
+        return [max_map.get(num, -1) for num in nums1]
